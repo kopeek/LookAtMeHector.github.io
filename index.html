@@ -14,7 +14,12 @@
     </head>
     <style>
         /* CSS styles can be added here */
-     
+        .containerOfBuffGus {
+
+            height: 50vh;
+            padding-top: 50px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -22,13 +27,91 @@
             margin: 0;
             padding: 20px;
             background-image: url('images/GusFringBB.webp');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            height: 300vh;
+        }
+        .rightGus{
+            float: right;
+        }
+        .LookatMeHector{
+            font-size: 50px;
+            color: whitesmoke;
+        }
+        .ShopContainerGrid{
+            display: grid;
+            padding-left: 10%;
+            padding-right: 10%;
+            height: auto-fit;
+            gap:2em;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:  repeat(auto-fit, minmax(100px, 1fr));
+            justify-items: center;
+            align-items: center;
+        }
+        .shop_item1{
+
+        }
+        .shop_item{
+
+            background-color: #dfdfdf;
+            border: 10px solid #0c0c0c;
+            width: 100%;
+            height: 400px;
+
+            min-height: 100px;
+            min-width: 100px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .shopping_image{
+            width: auto;
+            height: 50%;
+            margin-top: 10px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .buy_button{
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .buy_button:hover {
+            background-color: #45a049;
         }
 
     </style>
 
     <body>
-        <span>hello</span>
+        <h1 class="LookatMeHector" style="text-align: center;">Look at me, Hector</h1>
+        <div class="containerOfBuffGus">
+        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" style="width: 20%;" />
+        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="rightGus" style="width: 20%;" />
         
+        </div>
+
+        <div class="ShopContainerGrid">
+            <div class="shop_item shop_item1">
+                <img src="https://iconsofpopculturestore.com/cdn/shop/files/52056132_2.jpg?v=1712141728" alt="Gus Fring" class="shopping_image" />
+                <h2>Blue meth (99.1% pure)</h2>
+                <p>Price: $150 per gram</p>
+                <button class="buy_button">Buy</button>
+            </div>
+                
+                
+
+
+        </div>
+
         <script src="" async defer></script>
     </body>
 </html>
