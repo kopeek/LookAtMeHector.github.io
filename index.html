@@ -31,16 +31,19 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-size: stretch;
-            background-position: center;
+            
 
 
             
-            
-
             height: auto;
         }
         .rightGus{
             float: right;
+        }
+        .IwantYouToLookAtMe{
+            width: 25%;
+            min-width: 100px;
+            aspect-ratio: 1/1;
         }
         .LookatMeHector{
             font-size: 50px;
@@ -50,10 +53,10 @@
             display: grid;
             padding-left: 10%;
             padding-right: 10%;
-            height: auto-fit;
+
             gap:2em;
 
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr));
             grid-template-rows:  repeat(auto-fit, minmax(100px, 1fr));
             justify-items: center;
             align-items: center;
@@ -63,23 +66,19 @@
 
         }
         .shop_item{
-
+            display: block;
             background-color: #dfdfdf;
             border: 10px solid #0c0c0c;
-            width: 100%;
-            height: 400px;
-
-            min-height: 100px;
-            min-width: 200px;
+            width: 1fr;
+            height: 1fr;
+            margin: 20%;
             text-align: center;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .shopping_image{
-            width: auto;
             height: 50%;
-            margin-top: 10px;
-            object-fit: cover;
+            width: 50%;
             border-radius: 15px;
         }
         .buy_button{
@@ -103,13 +102,14 @@
     <body>
         <h1 class="LookatMeHector" style="text-align: center;">Look at me, Hector</h1>
         <div class="containerOfBuffGus">
-        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" style="width: 20%;" />
-        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="rightGus" style="width: 20%;" />
+        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="IwantYouToLookAtMe" />
+        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="rightGus IwantYouToLookAtMe" />
         
         </div>
 
         <div class="ShopContainerGrid">
             <div class="shop_item shop_item1">
+                
                 <img src="https://iconsofpopculturestore.com/cdn/shop/files/52056132_2.jpg?v=1712141728" alt="Gus Fring" class="shopping_image" />
                 <h2>Blue meth (99.1% pure)</h2>
                 <p>Price: $150 per gram</p>
@@ -118,6 +118,8 @@
                     <button class="buy_button">Buy</button>
                 </form>
             </div>
+
+
 
                 
                 
