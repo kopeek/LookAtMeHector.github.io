@@ -16,8 +16,9 @@
     <style>
         /* CSS styles can be added here */
         .containerOfBuffGus {
+            display: flex;
+            justify-content: space-between;
 
-            height: 50vh;
             padding-top: 50px;
         }
 
@@ -26,7 +27,7 @@
             background-color: #2b2b2b;
             color: #333;
             margin: 0;
-            padding: 20px;
+            
             background-image: url('images/GusFringBB.webp');
             background-size: cover;
             background-repeat: no-repeat;
@@ -37,48 +38,38 @@
             
             height: auto;
         }
-        .rightGus{
-            float: right;
-        }
+
         .IwantYouToLookAtMe{
-            width: 25%;
-            min-width: 100px;
-            aspect-ratio: 1/1;
+            width: 30%;
         }
         .LookatMeHector{
             font-size: 50px;
             color: whitesmoke;
         }
-        .ShopContainerGrid{
-            display: grid;
-            padding-left: 10%;
-            padding-right: 10%;
 
-            gap:2em;
 
-            grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr));
-            grid-template-rows:  repeat(auto-fit, minmax(100px, 1fr));
-            justify-items: center;
-            align-items: center;
-            place-items: center;
-        }
-        .shop_item1{
-
-        }
         .shop_item{
-            display: block;
             background-color: #dfdfdf;
             border: 10px solid #0c0c0c;
-            width: 1fr;
-            height: 1fr;
-            margin: 20%;
+            width: max(33vw, 200px);
+            
+            margin-top : 50px;
+            padding: 1%;
             text-align: center;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        .shopping_items{
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            
+            padding: 20px;
+        }
         .shopping_image{
-            height: 50%;
-            width: 50%;
+
+            width: 60%;
+            object-fit: contain;
             border-radius: 15px;
         }
         .buy_button{
@@ -88,7 +79,6 @@
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
             cursor: pointer;
@@ -102,13 +92,13 @@
     <body>
         <h1 class="LookatMeHector" style="text-align: center;">Look at me, Hector</h1>
         <div class="containerOfBuffGus">
-        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="IwantYouToLookAtMe" />
-        <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="rightGus IwantYouToLookAtMe" />
+            <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="IwantYouToLookAtMe" />
+            <img src="https://media1.tenor.com/m/JIv6wOdI7FcAAAAC/haktan-gustavo-fring.gif" alt="Gus Fring" class="IwantYouToLookAtMe" />
         
         </div>
 
-        <div class="ShopContainerGrid">
-            <div class="shop_item shop_item1">
+        <div class="shopping_items">
+            <div class="shop_item">
                 
                 <img src="https://iconsofpopculturestore.com/cdn/shop/files/52056132_2.jpg?v=1712141728" alt="Gus Fring" class="shopping_image" />
                 <h2>Blue meth (99.1% pure)</h2>
